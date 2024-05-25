@@ -1,0 +1,20 @@
+{
+   "compilerOptions": {
+     "lib": [
+       "es5",
+       "es6"
+     ],
+     "target": "es6",  // Il est préférable de cibler ES6 au lieu de ES5 pour bénéficier des fonctionnalités modernes de JavaScript
+     "module": "commonjs",
+     "moduleResolution": "node",
+     "outDir": "./build",
+     "emitDecoratorMetadata": true,
+     "experimentalDecorators": true,
+     "sourceMap": true,
+     "esModuleInterop": true,  // Ajout de cette ligne
+     "allowSyntheticDefaultImports": true  // Ajout de cette ligne
+   },
+   "include": ["src/**/*"],  // Inclure tous les fichiers sources
+   "exclude": ["node_modules", "build"]  // Exclure les modules Node.js et le dossier de build
+ }
+ 
